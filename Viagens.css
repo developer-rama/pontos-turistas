@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300,500,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+
+html,
+body{
+  background: var(--cor-fundo);
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;    
+  z-index: 9999;
+  top: 6rem;
+}
+
+main .container{
+  background: white;
+  border-radius: 4px;
+  box-shadow: 
+    0 0 20px rgba(0,0,0,0.1), 
+    0 -40px 100px -40px rgba(0,0,0,0.5);
+  margin-bottom: 10rem;
+  padding: 3rem;
+  position: relative;
+  width: 70vw;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* Definição de variáveis */
+:root{
+  --cor-texto: #121212;
+  --cor-texto-branco: #FEFEFE;
+  --fundo-header: #0984e3;
+  --altura-menu: 6rem;
+}
+
+body{
+	position: relative;
+  background: url(https://www.despegar.com/media/pictures/951619e6-c6a0-4c0d-9bba-4e5cad9d0648) no-repeat center center fixed;
+  background-size: cover;
+  font-size: 40px;
+}
+
+/* Tipografia */
+a{
+  text-decoration: none;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, 
+div,
+span,
+strong,
+em{
+  color: var(--cor-texto);
+  font-family: 'Sunflower', sans-serif;
+
+}
+
+/* Cabeçalho */
+
+header{
+  background: var(--fundo-header);
+  height: var(--altura-menu);
+  padding: 0 2rem;
+  position: relative;
+  transition: all ease-in-out 0.5s;
+}
+
+nav{
+  background: #333;
+  height: 100%;
+  left: 0;  
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  transition: all ease-in-out .3s;
+  z-index: 9999;
+  width:100%;
+}
+
+nav ul{
+  list-style: none;
+  padding: 2rem;
+}
+
+nav li{
+  padding: 1rem 0;
+}
+
+nav a{
+  color: var(--cor-texto-branco);
+  display: block;
+  text-decoration: none;
+}
+
+nav.hidden{
+  overflow: hidden;
+  width: 0;
+}
+
+nav.active{
+  width: 20vw;
+}
+
+header h1{
+  line-height: var(--altura-menu);
+  text-align: center;
+}
+
+#btn{
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Estilo menu-icon*/ 
+#menu-icon{
+  height: 25px;
+  line-height: 6rem;
+  width: 40px;
+}
+
+#menu-icon [id^="linha"]{
+  background: var(--cor-texto);
+  border-radius: 5px;
+  height: 5px;
+  margin-bottom: 5px;
+  width: 100%;  
+}
+
+#menu-icon [id^="linha"]:last-of-type{
+  margin-bottom: 0;
+}
+
+header{
+	z-index: 1;
+}
+
+main{
+	z-index: 0;
+}
+
+/* Transições */
+nav,
+#menu-bar,
+header,
+main{
+  width:100%;
+    transition: all ease-in-out 0.4s;
+}
+#alinhamento{
+  text-align: center;
+}
+.invisivel{
+  display: none;
+}
+input{
+  font-size: 50px;
+  width:600px;
+  height:60px;
+}
+button{
+  font-size: 40px;
+  width:200px;
+  height:60px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+#mapa-marcadores{
+  height: 400px;
+  margin-top: 4rem;
+}
+
+#markers{
+  margin-top: 4rem;
+}

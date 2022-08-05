@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Viagens</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Viagens.css">
+</head>
+<body>
+	<nav class="hidden">
+	    <ul>
+	    	<li><a href="#inicio" onclick="inicio()">Começo</a></li>
+	    	<li><a href="#sobre" onclick="sob()">Sobre</a></li>
+	    	<!-- <li><a href="#favoritos" onclick="fav()">Favoritos</a></li> -->
+	    	<li><a href="#sair" onclick="sair()">Sair</a></li>
+	    </ul>
+	</nav>
+	<header>
+		<div id="menu-bar">
+	    	<a id="btn" href="#">
+		        <div id="menu-icon">
+		        	<div id="linha-1"></div>
+		        	<div id="linha-2"></div>
+		        	<div id="linha-3"></div>
+		        </div>
+	    	</a>
+	    	<h1>Brasil.com</h1>
+		</div>
+	</header>
+
+	<main id="alinhamento">
+		<nav class="container">
+			<section id="sair">
+				<div id="principal" class="visivel">
+
+				    <h1>Login</h1><br/>
+
+					Usuário: <p><input type="text" id="login"></p>
+					Senha: <p><input type="password" id="senha"></p>
+
+					<br/><button onclick="logar()">OK</button>
+					<button onclick="cadastrar()">Cadastrar</button>
+				</div>
+				<div id="cadastra" class="invisivel">
+
+					<h1>Cadastrar usuário</h1><br/>
+
+					Nome: <p><input type="text" id="nome"></p>
+					Nascimento: <p><input type="date" id="nascimento"></p>
+					Telefone: <p><input type="text" id="telefone"></p>
+					E-mail: <p><input type="text" id="email"></p>
+					Login <p><input type="text" id="login_cadastro"></p>
+					Senha <p><input type="password" id="senha_cadastro"></p>
+
+					<br/><button onclick="salvar()">Salvar</button>
+				</div>
+
+			</section>
+			<section id="inicio" >
+				<div id="comeco" class="invisivel">
+					
+					<section>
+						<div>
+							<h2>Parque Ibirapera</h2>
+
+							<img src="ibira.jpg" width="700" height="500">
+						</div>
+						<div>
+							<h2>Porto de Galinhas</h2>
+
+							<img src="galinha.jpg" width="700" height="500">
+						</div>
+						<div>
+							<h2>Pão de Açúcar</h2>
+
+							<img src="pão.jpg" width="700" height="500">
+						</div>
+						<div>
+							<h2>Praia da Rosa</h2>
+
+							<img src="rosa.jpg" width="700" height="500">
+						</div>
+						<div>
+							<h2>Teatro Amazonas</h2>
+
+							<img src="teatro.jpg" width="700" height="500">
+						</div>
+						<div>
+							<h2>Palacio do Planalto</h2>
+
+							<img src="planalto.jpg" width="700" height="500">
+						</div>
+					</section>
+
+					<div id="locais"></div>
+
+					<section id="markers">
+					    <h2>Todas as Localizações</h2>
+
+					    <p>Cada ponto do mapa é um local listado nas caixas acima e com seus respectivos nomes e descrição.</p>
+
+					    <div id="mapa-marcadores"></div>
+					</section>
+
+					<!-- <section id="favoritos">
+						<div id="favorito" class="invisivel"></div>
+
+						<div id="favoritos"></div>
+					</section> -->
+				</div>
+			</section>
+			<section id="sobre">
+				<div id="descrição" class="invisivel">
+					<h2>Simplesmente, o maior site de conteúdo de viagens do Brasil.</h2>
+
+					<p>Quem procura por promoções de passagens aéreas na internet certamente chegará ao Melhores Destinos. Todo dia, diversas promoções são divulgadas ao público gratuitamente.</p>
+					
+				</div>
+			</section>
+		</nav>
+	</main>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPuHBhBpvvWVCqPgnSu1ilBYEawemUtlY&callback=initMap"
+    async defer></script>
+<script type="text/javascript" src="Viagens.js"></script>
+</body>
+</html>
